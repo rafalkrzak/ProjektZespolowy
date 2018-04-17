@@ -16,7 +16,7 @@ namespace WebApplication6.Controllers
             return View();
         }
 
-        [Authorize(Roles = "UzytkownikNiezweryfikowany, Administrator")]
+        [Authorize(Roles = "UzytkownikNiezweryfikowany, Uzytkownik, Administrator")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
